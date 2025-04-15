@@ -1,4 +1,4 @@
-### DreamCatcher 💤💤
+## DreamCatcher 💤💤
 
 Le projet est un "**Journal de rêves**" qui vise à créer une application mobile immersive et enrichissante qui offre une expérience complète de l'enregistrement, de l'analyse et du partage des rêves. En combinant les fonctionnalités de base avec des concepts novateurs, cette application propose un espace dédié à l'exploration du monde onirique de chaque utilisateur.
 Les rêves ont toujours été une source d'inspiration, de mystère et d'intérêt pour les êtres humains. Enregistrer ces rêves peut non seulement être une expérience introspective enrichissante, mais aussi offrir des opportunités pour comprendre les motifs récurrents, les émotions sous-jacentes et les connections avec la vie quotidienne. Cependant, avec les rythmes de vie modernes, il est souvent difficile de consigner et de revisiter ces moments fugaces.
