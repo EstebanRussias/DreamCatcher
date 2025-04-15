@@ -9,17 +9,17 @@ Les rêves ont toujours été une source d'inspiration, de mystère et d'intér�
     
     Le formulaire doit être enrichi avec de nouveaux champs, notamment:
     
-    - Date et Heure du rêve
-    - Type de rêve (cauchemar, rêve lucide, rêve ordinaire, etc.)
-    - État émotionnel avant et après le rêve
-    - Personnages présents dans le rêve
-    - Lieu du rêve
-    - Intensité émotionnelle
-    - Clarté du rêve
-    - Tags ou Mots-clés associés au rêve
-    - Qualité du sommeil ressentie
-    - Signification personnelle du rêve
-    - Tonalité globale du rêve (positive, négative, neutre)
+    [ ] Date et Heure du rêve
+    [ ] Type de rêve (cauchemar, rêve lucide, rêve ordinaire, etc.)
+    [ ] État émotionnel avant et après le rêve
+    [ ] Personnages présents dans le rêve
+    [ ] Lieu du rêve
+    [ ] Intensité émotionnelle
+    [ ] Clarté du rêve
+    [ ] Tags ou Mots-clés associés au rêve
+    [ ] Qualité du sommeil ressentie
+    [ ] Signification personnelle du rêve
+    [ ] Tonalité globale du rêve (positive, négative, neutre)
 2. **Suppression / Modification d'un rêve**
     
     L'utilisateur doit pouvoir modifier ou supprimer un rêve enregistré dans l'application.
@@ -44,16 +44,13 @@ Les rêves ont toujours été une source d'inspiration, de mystère et d'intér�
     
     Permettre à l'utilisateur d'exporter ses rêves sous un format texte ou PDF pour les conserver ou les partager.
     
-8. **Utilisation d'une API publique** *(Bonus)*
-    
-    Intégrer une API externe comme [*moon-api.com*](http://moon-api.com/) pour enrichir l'application avec des données supplémentaires, comme les phases lunaires liées à la nuit du rêve. - https://documenter.getpostman.com/view/27963553/2s93sf1qUw#intro
     
 
 ### 3.3 Travaux attendus et évaluation:
 
-- Code source de l'application avec des commentaires explicatifs.
-- Rapport sous la forme d'une documentation technique comprenant:
-    - l'équivalent d'un README qui explique comment lancer votre application.
-    - une explication brève de la structure du projet et l'architecture.
-    - Les choix de conception et les fonctionnalités implémentées.
-    - Des capture d'écran des pages de l'application illustrant les choix graphiques.
+[ ] Code source de l'application avec des commentaires explicatifs.
+[ ] Rapport sous la forme d'une documentation technique comprenant:
+    [ ] l'équivalent d'un README qui explique comment lancer votre application.
+    [ ] une explication brève de la structure du projet et l'architecture.
+    [ ] Les choix de conception et les fonctionnalités implémentées.
+    [ ] Des capture d'écran des pages de l'application illustrant les choix graphiques.
