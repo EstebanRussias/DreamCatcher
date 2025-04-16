@@ -310,11 +310,11 @@ export default function DreamForm() {
         dropdownStyle={styles.dropdownMenuStyle}
       />
       <Text style={styles.textlabel} variant="titleMedium">
-        ... :
+        Lieu du rêve :
       </Text>
 
       <TextInput
-        label="Hashtag 3"
+        label="Lieu"
         value={hashtag3}
         onChangeText={setHashtag3}
         underlineColor="#275950"

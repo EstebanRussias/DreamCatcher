@@ -55,10 +55,10 @@ export default function DreamList() {
                 />
                 <Card.Content>
                   <Text>🕒 Heures de sommeil : {dream.valueHeure || "N/A"}</Text>
-                  <Text>🌙 Type de rêve : {dream.valueRadio || "N/A"}</Text>
-                  <Text>🙂 État avant : {dream.selectedItem1 || "N/A"}</Text>
-                  <Text>😵 État après : {dream.selectedItem2 || "N/A"}</Text>
-                  <Text>🏷 Hashtag : {dream.hashtag3 || "Aucun"}</Text>
+                  <Text>Type de rêve : {dream.valueRadio || "N/A"}</Text>
+                  <Text>État avant : {dream.selectedItem1 || "N/A"}</Text>
+                  <Text>État après : {dream.selectedItem2 || "N/A"}</Text>
+                  <Text>Lieu : {dream.hashtag3 || "Aucun"}</Text>
                   <Text>📊 Intensité : {dream.valueIntensite}/10</Text>
                   <Text>📊 Clarté : {dream.valueClarte}/10</Text>
                   <Text>📊 Qualité : {dream.valueQualite}/10</Text>
@@ -78,7 +78,7 @@ export default function DreamList() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 16,
+    padding: 10
   },
   card: {
     marginBottom: 16,
