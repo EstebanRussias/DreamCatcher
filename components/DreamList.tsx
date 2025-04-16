@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { ScrollView, StyleSheet, Text } from "react-native";
+import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Card } from "react-native-paper";
+import { Link } from "expo-router";
 
 export default function DreamList() {
   const [dreams, setDreams] = useState([]);
@@ -23,11 +24,16 @@ export default function DreamList() {
   const formatDate = (dateString) => {
     if (!dateString) return "Date inconnue";
     const date = new Date(dateString);
-    if (isNaN(date)) return dateString; // Si la date est invalide, renvoie-la telle quelle
+    if (isNaN(date)) return dateString;
     const day = String(date.getDate()).padStart(2, "0");
     const month = String(date.getMonth() + 1).padStart(2, "0");
     const year = date.getFullYear();
     return `${day}/${month}/${year}`;
+  };
+
+  const renderTagList = (tags) => {
+    if (!tags || tags.length === 0) return "Aucun";
+    return tags.map((tag) => (typeof tag === "string" ? tag : tag.label || tag)).join(", ");
   };
 
   return (
@@ -36,17 +42,33 @@ export default function DreamList() {
         <Text style={styles.emptyText}>Aucun rêve enregistré</Text>
       ) : (
         dreams.map((dream, index) => (
-          <Card key={index} style={styles.card}>
-            <Card.Title title={`Rêve ${index + 1} - ${formatDate(dream.dreamDate)}`} />
-            <Card.Content>
-              <Text>
-                Le {formatDate(dream.dreamDate)}, tu as fait un rêve {dream.valueRadio} après avoir dormi pendant {dream.valueHeure} heures.
-                Avant de t'endormir, tu te sentais {dream.selectedItem1}, et à ton réveil, tu t'es senti {dream.selectedItem2}.
-                Ce rêve est associé au hashtag {dream.hashtag3}, et il a une intensité de {dream.valueIntensite},
-                une clarté de {dream.valueClarte}, et une qualité de {dream.valueQualite}.
-              </Text>
-            </Card.Content>
-          </Card>
+          <Link
+            key={index}
+            href={{ pathname: "/edit", params: { id: index } }}
+            asChild
+          >
+            <TouchableOpacity>
+              <Card style={styles.card}>
+                <Card.Title
+                  title={`Rêve ${index + 1}`}
+                  subtitle={`Date : ${formatDate(dream.dreamDate)}`}
+                />
+                <Card.Content>
+                  <Text>🕒 Heures de sommeil : {dream.valueHeure || "N/A"}</Text>
+                  <Text>🌙 Type de rêve : {dream.valueRadio || "N/A"}</Text>
+                  <Text>🙂 État avant : {dream.selectedItem1 || "N/A"}</Text>
+                  <Text>😵 État après : {dream.selectedItem2 || "N/A"}</Text>
+                  <Text>🏷 Hashtag : {dream.hashtag3 || "Aucun"}</Text>
+                  <Text>📊 Intensité : {dream.valueIntensite}/10</Text>
+                  <Text>📊 Clarté : {dream.valueClarte}/10</Text>
+                  <Text>📊 Qualité : {dream.valueQualite}/10</Text>
+                  <Text>📖 Signification : {dream.significationValue || "N/A"}</Text>
+                  <Text>👥 Tags personnels : {renderTagList(dream.valuePerso)}</Text>
+                  <Text>🏷️ Tags généraux : {renderTagList(dream.valueTag)}</Text>
+                </Card.Content>
+              </Card>
+            </TouchableOpacity>
+          </Link>
         ))
       )}
     </ScrollView>
