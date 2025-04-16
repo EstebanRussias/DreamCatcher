@@ -33,7 +33,7 @@ Scané le QR-code qui est afficher lors du lancement de l'application
 
 ## Fonctionnalités
 
-*Le formulaire :*
+### Le formulaire :
     
     - [ ] Date et Heure du rêve
     - [ ] Type de rêve (cauchemar, rêve lucide, rêve ordinaire, etc.)
@@ -47,7 +47,7 @@ Scané le QR-code qui est afficher lors du lancement de l'application
     - [ ] Signification personnelle du rêve
     - [ ] Tonalité globale du rêve (positive, négative, neutre)
 
-*Le CRUD :*
+### Le CRUD :
 
     - [ ] Suppression 
     - [ ] Modification d'un rêve
