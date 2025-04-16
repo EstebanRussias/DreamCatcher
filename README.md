@@ -22,35 +22,35 @@ Les rêves ont toujours été une source d'inspiration, de mystère et d'intér�
    ```
 
 **Pour l'avoir sur votre téléphone :**
-Telechargé l'application Expo Go
-Le téléphone et la machine doit etre sur la meme connexion internet 
-Scané le QR-code qui est afficher lors du lancement de l'application 
+ - Telechargé l'application Expo Go
+ - Le téléphone et la machine doit etre sur la meme connexion internet 
+ - Scané le QR-code qui est afficher lors du lancement de l'application 
 
 **Pour l'avoir sur votre PC :**
-lancer le serveur 
-appuier sur "w" ou suivre le lien [localhost:8081](http://localhost:8081)
-Scané le QR-code qui est afficher lors du lancement de l'application 
+ - lancer le serveur 
+ - appuier sur "w" 
+ - suivre le lien [localhost:8081](http://localhost:8081)
 
 ## Fonctionnalités
 
 ### Le formulaire :
     
-    - [ ] Date et Heure du rêve
-    - [ ] Type de rêve (cauchemar, rêve lucide, rêve ordinaire, etc.)
-    - [ ] État émotionnel avant et après le rêve
-    - [ ] Personnages présents dans le rêve
-    - [ ] Lieu du rêve
-    - [ ] Intensité émotionnelle
-    - [ ] Clarté du rêve
-    - [ ] Tags ou Mots-clés associés au rêve
-    - [ ] Qualité du sommeil ressentie
-    - [ ] Signification personnelle du rêve
-    - [ ] Tonalité globale du rêve (positive, négative, neutre)
+- [x] Date et Heure du rêve
+- [x] Type de rêve (cauchemar, rêve lucide, rêve ordinaire, etc.)
+- [x] État émotionnel avant et après le rêve
+- [x] Personnages présents dans le rêve
+- [x] Lieu du rêve
+- [x] Intensité émotionnelle
+- [x] Clarté du rêve
+- [x] Tags ou Mots-clés associés au rêve
+- [x] Qualité du sommeil ressentie
+- [x] Signification personnelle du rêve
+- [x] Tonalité globale du rêve (positive, négative, neutre)
 
 ### Le CRUD :
 
-    - [ ] Suppression 
-    - [ ] Modification d'un rêve
+- [x] Suppression 
+- [ ] Modification d'un rêve
     
 
 
