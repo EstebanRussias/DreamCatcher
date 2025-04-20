@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { useFocusEffect } from "expo-router";
+import { useCallback } from "react";
 import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Card } from "react-native-paper";
@@ -7,19 +9,22 @@ import { Link } from "expo-router";
 export default function DreamList() {
   const [dreams, setDreams] = useState([]);
 
-  useEffect(() => {
-    const fetchDreams = async () => {
-      try {
-        const storedDreams = await AsyncStorage.getItem("dreamFormDataArray");
-        if (storedDreams) {
-          setDreams(JSON.parse(storedDreams) || []);
+  useFocusEffect(
+    useCallback(() => {
+      const fetchDreams = async () => {
+        try {
+          const storedDreams = await AsyncStorage.getItem("dreamFormDataArray");
+          if (storedDreams) {
+            setDreams(JSON.parse(storedDreams) || []);
+          }
+        } catch (error) {
+          console.error("Erreur lors de la récupération des rêves:", error);
         }
-      } catch (error) {
-        console.error("Erreur lors de la récupération des rêves:", error);
-      }
-    };
-    fetchDreams();
-  }, []);
+      };
+  
+      fetchDreams();
+    }, [])
+  );
 
   const formatDate = (dateString) => {
     if (!dateString) return "Date inconnue";

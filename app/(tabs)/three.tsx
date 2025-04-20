@@ -17,13 +17,13 @@ export default function TabThreeScreen() {
 
   // Fonction de gestion du clic
   const handlePress = () => {
-    const keyToRemove = 'dreamFormDataArray'; // Remplacez 'your_key' par la clé de l'élément que vous voulez supprimer
+    const keyToRemove = 'dreamFormDataArray'; 
     clearValueByKey(keyToRemove);
   };
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab Three</Text>
+      <Text style={styles.title}>Supprimer les rêves</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Button icon="trash-can" mode="contained" onPress={handlePress} style={styles.button}>
         Supprimer les rêves
